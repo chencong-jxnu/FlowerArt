@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_forum"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.cc.flowerart.activity.ForumActivity">
+    <RelativeLayout
+        android:id="@+id/forum_rl"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="#fdfdef">
+
+        <ImageView
+            android:id="@+id/activity_forum_iv_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:src="@mipmap/back" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/forum_rl"
+        android:background="@color/colorCutLine" />
+
+    <LinearLayout
+        android:id="@+id/activity_forum_ll"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/forum_rl"
+        android:layout_marginTop="1dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/activity_forum_tv_new"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="最新"
+            android:textColor="@color/colorTextSelected" />
+
+        <TextView
+            android:id="@+id/activity_forum_tv_flowerArt"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="花艺"
+            android:textColor="@color/colorText" />
+
+        <TextView
+            android:id="@+id/activity_forum_tv_gardenArt"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="园艺"
+            android:textColor="@color/colorText" />
+
+        <TextView
+            android:id="@+id/activity_forum_tv_house"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="家居"
+            android:textColor="@color/colorText" />
+        <TextView
+            android:id="@+id/activity_forum_tv_life"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="生活"
+            android:textColor="@color/colorText" />
+    </LinearLayout>
+    <ListView
+        android:id="@+id/activity_forum_lv_posts"
+        android:scrollingCache="false"
+        android:animationCache="false"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent">
+    </ListView>
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

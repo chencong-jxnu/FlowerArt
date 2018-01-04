@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_comment"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorMain">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="#fdfdef">
+
+        <ImageView
+            android:id="@+id/activity_comment_iv_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:src="@mipmap/back" />
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/activity_comment_lv_comments"
+        android:scrollingCache="false"
+        android:animationCache="false"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    </ListView>
+
+    <TextView
+        android:background="@color/colorCutLine"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:padding="5dp"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/activity_comment_et_comment"
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:layout_height="match_parent"
+            android:textAlignment="center"
+            android:hint="说点什么吧~"
+            android:background="@drawable/shape_button"/>
+        <Button
+            android:id="@+id/activity_comment_bt_send"
+            android:layout_marginLeft="10dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/shape_button"
+            android:text="发送"/>
+    </LinearLayout>
+
+
+</LinearLayout>

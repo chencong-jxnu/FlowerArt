@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_post"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cc.flowerart.activity.PublishActivity">
+
+    <RelativeLayout
+        android:id="@+id/publish_rl"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="#fdfdef">
+
+        <ImageView
+            android:id="@+id/publish_iv_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:src="@mipmap/back" />
+
+        <TextView
+            android:id="@+id/publish_tv_publish"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:text="发布"
+            android:textColor="@color/colorText"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/publish_rl"
+        android:background="#e6e6cd" />
+
+    <!--android:maxLength="140"-->
+    <EditText
+        android:id="@+id/publish_et_postContent"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@id/publish_rl"
+        android:layout_margin="10dp"
+        android:background="@null"
+        android:gravity="top"
+        android:hint="输入内容，最多140字"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/publish_et_postContent"
+        android:background="#e6e6cd" />
+
+    <GridView
+        android:id="@+id/activity_publish_gv_addImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/publish_et_postContent"
+        android:layout_margin="10dp"
+
+        android:horizontalSpacing="2dp"
+        android:listSelector="#00000000"
+        android:numColumns="3"
+        android:scrollbars="none"
+        android:verticalSpacing="5dp"></GridView>
+
+    <LinearLayout
+        android:id="@+id/activity_publish_ll"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/activity_publish_gv_addImage"
+        android:layout_marginTop="1dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/activity_publish_tv_flowerArt"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="花艺"
+            android:textColor="@color/colorText" />
+
+        <TextView
+            android:id="@+id/activity_publish_tv_gardenArt"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="园艺"
+            android:textColor="@color/colorText" />
+
+        <TextView
+            android:id="@+id/activity_publish_tv_house"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="家居"
+            android:textColor="@color/colorText" />
+        <TextView
+            android:id="@+id/activity_publish_tv_life"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="生活"
+            android:textColor="@color/colorText" />
+    </LinearLayout>
+
+</RelativeLayout>

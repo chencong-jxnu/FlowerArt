@@ -1,0 +1,62 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion "24.0.3"
+    defaultConfig {
+        applicationId "com.cc.flowerart"
+        minSdkVersion 15
+        targetSdkVersion 24
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    //so文件加载，需要添加下面代码
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+    splits {
+        abi {
+            enable true
+            reset()
+            include 'x86', 'armeabi-v7a', 'x86_64'
+            universalApk true
+        }
+    }
+}
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile(name: 'my_widget', ext: 'aar')
+    compile name: 'SMSSDK-2.1.2', ext: 'aar'
+    compile name: 'SMSSDKGUI-2.1.2', ext: 'aar'
+    compile files('libs/universal-image-loader-1.9.4.jar')
+    compile files('libs/happy-dns-0.2.3.2.jar')
+    compile files('libs/okhttp-2.7.0.jar')
+    compile files('libs/okio-1.6.0.jar')
+    compile files('libs/qiniu-android-sdk-7.1.2.jar')
+    compile files('libs/MobCommons-2016.1012.1447.jar')
+    compile files('libs/MobTools-2016.1012.1447.jar')
+    compile files('libs/fastjson-1.2.7.jar')
+    compile 'com.android.support:appcompat-v7:24.2.1'
+    compile 'com.android.support:design:24.2.1'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    testCompile 'junit:junit:4.12'
+}

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">FlowerArt</string>
+    <string name="dir_all_pictures">/所有图片</string>
+    <string name="complete">完成</string>
+    <string name="chose_at_most">最多选择</string>
+    <string name="sheet">张</string>
+    <string name="picture">图片</string>
+    <string name="all_picture">所有图片</string>
+    <string name="title_activity_forum">ForumActivity</string>
+    <string name="title_activity_comment">CommentActivity</string>
+</resources>

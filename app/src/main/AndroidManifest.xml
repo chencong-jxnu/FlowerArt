@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cc.flowerart">
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".config.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.mob.tools.MobUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name=".activity.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.RegisterActivity" />
+        <activity android:name=".activity.LoginActivity" />
+        <activity android:name=".activity.HomeActivity" />
+        <activity android:name=".activity.ForgetPasswordActivity" />
+        <activity android:name=".activity.PersonalPageActivity" />
+        <activity android:name=".activity.PublishActivity" />
+        <activity android:name=".activity.PartakeActivity" />
+        <activity android:name=".activity.CollevtionActivity" />
+        <activity android:name=".activity.OrderActivity" />
+        <activity android:name=".activity.TrolleyActivity" />
+        <activity android:name=".activity.NewsActivity" />
+        <activity android:name=".activity.ConcernActivity" />
+        <activity android:name=".activity.FansActivity" />
+        <activity android:name=".activity.UserInfoActivity" />
+        <activity android:name=".activity.SelectPictureActivity" />
+        <activity
+            android:name=".activity.ForumActivity"
+            android:label="@string/title_activity_forum"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".activity.ShowPictureActivity" />
+        <activity android:name=".activity.WebViewActivity" />
+        <activity android:name=".activity.PlantEncyclopedia" />
+        <activity android:name=".activity.DailyPublishActivity" />
+        <activity
+            android:name=".activity.CommentActivity"
+            android:label="@string/title_activity_comment"
+            android:theme="@style/AppTheme" />
+    </application>
+
+</manifest>

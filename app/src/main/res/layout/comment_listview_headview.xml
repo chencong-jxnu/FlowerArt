@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/comment_listview_headview_ll"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/comment_listview_headview_rl_userInfo"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@color/colorMain">
+
+        <com.cc.widget.circleimageview.CircleImageView
+            android:id="@+id/comment_listview_headview_iv_userIcon"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:padding="5dp"
+            android:src="@mipmap/logo" />
+
+        <TextView
+            android:id="@+id/comment_listview_headview_tv_time"
+            android:layout_width="110dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:text="2017-08-12 12:30"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/comment_listview_headview_tv_nikeName"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="14dp"
+            android:layout_marginStart="14dp"
+            android:layout_toRightOf="@+id/comment_listview_headview_iv_userIcon"
+            android:gravity="center"
+            android:hint="nickName"
+            android:textColor="@color/colorText"
+            android:textSize="14sp" />
+    </RelativeLayout>
+    <!--帖子内容的TextView-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorCutLine"/>
+    <TextView
+        android:id="@+id/comment_listview_headview_tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/comment_listview_headview_rl_userInfo"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:singleLine="false"
+        android:text="帖子内容" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorCutLine"/>
+
+    <com.cc.flowerart.widget.MyGridView
+        android:id="@+id/comment_listview_headview_gv_pictures"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:horizontalSpacing="4dp"
+        android:numColumns="3"
+        android:scrollbars="none"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="4dp">
+
+    </com.cc.flowerart.widget.MyGridView>
+    <!--评论的ListView-->
+</LinearLayout>

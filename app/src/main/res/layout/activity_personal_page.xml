@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_personal_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cc.flowerart.activity.PersonalPageActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorCutLine"
+        android:layout_below="@+id/activity_personal_page_rl"/>
+
+
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/personal_page_tv1"
+        android:layout_toLeftOf="@+id/personal_page_tv1"
+        android:layout_toStartOf="@+id/personal_page_tv1"
+        android:text="我要发帖"
+        android:textAlignment="center"
+        android:textColor="@color/colorText"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/personal_page_tv1"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/personal_page_iv_partake"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="5dp"
+        android:text="我的参与"
+        android:textAlignment="center"
+        android:textColor="@color/colorText" />
+
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/personal_page_tv1"
+        android:layout_toEndOf="@+id/personal_page_tv1"
+        android:layout_toRightOf="@+id/personal_page_tv1"
+        android:text="我的收藏"
+        android:textAlignment="center"
+        android:textColor="@color/colorText" />
+
+
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/personal_page_tv2"
+        android:layout_toLeftOf="@+id/personal_page_tv2"
+        android:layout_toStartOf="@+id/personal_page_tv2"
+        android:text="我的订单"
+        android:textAlignment="center"
+        android:textColor="@color/colorText" />
+
+    <TextView
+        android:id="@+id/personal_page_tv2"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/personal_page_iv_trolley"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="5dp"
+        android:text="购物车"
+        android:textAlignment="center"
+        android:textColor="@color/colorText" />
+
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/personal_page_tv2"
+        android:layout_toEndOf="@+id/personal_page_tv2"
+        android:layout_toRightOf="@+id/personal_page_tv2"
+        android:text="我的消息"
+        android:textAlignment="center"
+        android:textColor="@color/colorText" />
+
+
+    <TextView
+        android:id="@+id/textViewCutLine"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@color/colorCutLine" />
+
+    <com.cc.widget.circleimageview.CircleImageView
+        android:id="@+id/personal_page_iv_usericon"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_below="@id/activity_personal_page_rl"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:src="@mipmap/user" />
+
+    <TextView
+        android:id="@+id/personal_page_tv_nickname"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/personal_page_iv_usericon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="nickname"
+        android:textAlignment="center"
+        android:textColor="@color/colorText"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/personal_page_tv_sign"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:layout_alignLeft="@+id/personal_page_tv_nickname"
+        android:layout_alignStart="@+id/personal_page_tv_nickname"
+        android:layout_below="@+id/personal_page_tv_nickname"
+        android:layout_marginTop="5dp"
+        android:text="sign"
+        android:textAlignment="center"
+        android:textColor="@color/colorText"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/personal_page_tv_sign"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/personal_page_ll_concern"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/personal_page_tv_concerm_num"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="end"
+
+                android:layout_weight="1"
+                android:fontFamily="sans-serif"
+                android:text="100"
+                android:textAlignment="textEnd"
+                android:textColor="@color/colorText"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/personal_page_concern"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif"
+                android:text="/关注"
+                android:textColor="@color/colorText"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/personal_page_ll_fans"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/personal_page_tv_fans_num"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="end"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif"
+                android:text="100"
+                android:textAlignment="textEnd"
+                android:textColor="@color/colorText"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/personal_page_tv_fans"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif"
+                android:text="/粉丝"
+                android:textColor="@color/colorText"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/personal_page_iv_partake"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/textViewCutLine"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="50dp"
+        app:srcCompat="@mipmap/partake" />
+
+    <ImageView
+        android:id="@+id/personal_page_iv_publish"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignTop="@+id/personal_page_iv_partake"
+        android:layout_toLeftOf="@+id/personal_page_iv_partake"
+        android:layout_toStartOf="@+id/personal_page_iv_partake"
+        app:srcCompat="@mipmap/publish" />
+
+    <ImageView
+        android:id="@+id/personal_page_iv_trolley"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/personal_page_iv_partake"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="50dp"
+        app:srcCompat="@mipmap/trolley" />
+
+    <ImageView
+        android:id="@+id/personal_page_iv_news"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignTop="@+id/personal_page_iv_trolley"
+        android:layout_below="@+id/personal_page_iv_partake"
+        android:layout_toEndOf="@+id/personal_page_iv_trolley"
+        android:layout_toRightOf="@+id/personal_page_iv_trolley"
+        app:srcCompat="@mipmap/news" />
+
+    <ImageView
+        android:id="@+id/personal_page_iv_order"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignLeft="@+id/personal_page_iv_publish"
+        android:layout_alignStart="@+id/personal_page_iv_publish"
+        android:layout_alignTop="@+id/personal_page_iv_trolley"
+        app:srcCompat="@mipmap/order" />
+
+    <ImageView
+        android:id="@+id/personal_page_iv_collection"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignLeft="@+id/personal_page_iv_news"
+        android:layout_alignStart="@+id/personal_page_iv_news"
+        android:layout_alignTop="@+id/personal_page_iv_partake"
+        app:srcCompat="@mipmap/collection_false" />
+
+    <LinearLayout
+        android:id="@+id/personal_page_ll_addPraise"
+        android:layout_below="@id/activity_personal_page_rl"
+        android:layout_width="70dp"
+        android:layout_height="32dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/personal_page_iv_praise"
+            android:layout_width="32dp"
+            android:layout_height="match_parent"
+            android:background="@mipmap/praise" />
+
+        <TextView
+            android:id="@+id/personal_page_tv_praise_num"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="100"
+            android:textColor="@color/colorText" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/activity_personal_page_rl"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#fdfdef"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:id="@+id/personal_page_iv_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:src="@mipmap/back" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorCutLine"
+            android:layout_below="@id/personal_page_iv_back"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>

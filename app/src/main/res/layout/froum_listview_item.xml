@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/colorMain"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/froum_listview_item_cutLine"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorCutLine" />
+
+    <RelativeLayout
+        android:id="@+id/froum_listview_item_rl_userInfo"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@color/colorMain">
+
+        <com.cc.widget.circleimageview.CircleImageView
+            android:id="@+id/froum_listview_item_iv_userIcon"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:padding="5dp"
+            android:src="@mipmap/logo" />
+
+        <TextView
+            android:id="@+id/froum_listview_item_tv_time"
+            android:layout_width="110dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:text="2017-08-12 12:30"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/froum_listview_item_tv_nikeName"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="14dp"
+            android:layout_marginStart="14dp"
+            android:layout_toRightOf="@+id/froum_listview_item_iv_userIcon"
+            android:gravity="center"
+            android:hint="nickName"
+            android:textColor="@color/colorText"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/froum_listview_item_tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/froum_listview_item_rl_userInfo"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:text="帖子内容" />
+
+    <com.cc.flowerart.widget.MyGridView
+        android:id="@+id/froum_listview_item_gv_pictures"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:horizontalSpacing="4dp"
+        android:numColumns="3"
+        android:scrollbars="none"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="4dp"></com.cc.flowerart.widget.MyGridView>
+
+    <LinearLayout
+        android:id="@+id/roum_listview_item_ll"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="1dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/froum_listview_item_rl_collection"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:padding="2dp"
+                android:src="@mipmap/collection_false" />
+
+            <TextView
+                android:id="@+id/froum_listview_item_tv_collectionNum"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/imageView"
+                android:layout_toRightOf="@+id/imageView"
+                android:gravity="center"
+                android:text="0" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/froum_listview_item_rl_answer"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:padding="2dp"
+                android:src="@mipmap/answer" />
+
+
+            <TextView
+                android:id="@+id/froum_listview_item_tv_answerNum"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/imageView2"
+                android:layout_toRightOf="@+id/imageView2"
+                android:gravity="center"
+                android:text="0" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/froum_listview_item_rl_praise"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:padding="2dp"
+                android:src="@mipmap/praise_false" />
+
+            <TextView
+                android:id="@+id/froum_listview_item_tv_praiseNum"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/imageView3"
+                android:layout_toRightOf="@+id/imageView3"
+                android:gravity="center"
+                android:text="0" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
