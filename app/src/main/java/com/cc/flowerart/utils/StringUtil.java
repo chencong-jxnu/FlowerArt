@@ -7,6 +7,9 @@ import java.util.UUID;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+
+
+/*添加一个git测试*/
 public class StringUtil {
     /**
      * 私有化构造器防止生成对象
